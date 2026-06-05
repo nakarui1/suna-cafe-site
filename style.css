@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  background: #f7efe5;
+  color: #6b5747;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+.header {
+  height: 70px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fbf7f0;
+  border-bottom: 1px solid #e0d2c3;
+}
+
+.logo {
+  font-weight: bold;
+  color: #5a3218;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #7a6757;
+  font-weight: bold;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 30px 45px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #6a4329;
+  font-style: italic;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5px;
+  border-bottom: 2px solid #d8c6b4;
+  padding-bottom: 25px;
+}
+
+.intro {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.photo {
+  width: 360px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text h3 {
+  font-size: 28px;
+  line-height: 1.8;
+}
+
+.menu {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+
+.card {
+  width: 260px;
+  height: 100px;
+  border: 1px solid #e2cdb8;
+  border-radius: 8px;
+  background: #fbf4ec;
+  text-decoration: none;
+  color: #6a4329;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card .icon {
+  font-size: 18px;
+}
+
+.card span {
+  font-size: 12px;
+  color: #9a8472;
+}
+
+.card span {
+  font-size: 14px;
+  color: #9a8472;
+  display: block;
+  margin-top: -5px;
+}
+
+.footer {
+  border-top: 1px solid #e0d2c3;
+  padding: 25px 60px;
+  background: #f3e7d8;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.menu-section{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:40px;
+  gap:40px;
+}
+
+.menu-text{
+  flex:1;
+}
+
+.coffee-photo {
+  width: 330px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.menu-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.menu-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.menu-hero h1 {
+  text-align: left;
+  font-size: 56px;
+  margin: 15px 0;
+}
+
+.menu-hero img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.small-title {
+  font-weight: bold;
+}
+
+.recommend h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.recommend-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.menu-card {
+  background: #fbf4ec;
+  border: 1px solid #e2cdb8;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.menu-card h3 {
+  font-size: 24px;
+  color: #5a3218;
+}
+
+.menu-card strong {
+  font-size: 24px;
+  color: #5a3218;
+}
+
+.menu-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.2fr;
+  gap: 30px;
+  align-items: center;
+  margin-top: 45px;
+  padding: 25px 0;
+  border-top: 1px solid #e2cdb8;
+}
+
+.menu-row img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-category h2 {
+  text-align: left;
+  font-size: 34px;
+  color: #5a3218;
+}
+
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #c8ad96;
+  padding: 10px 0;
+}
+.shop-page {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+.shop-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 35px;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.shop-hero img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.shop-info-box h1 {
+  text-align: left;
+  font-size: 42px;
+  color: #5a3218;
+  margin-bottom: 5px;
+}
+
+.shop-info-box p {
+  color: #b39b85;
+  font-size: 13px;
+}
+
+.shop-info-box dl {
+  margin-top: 25px;
+}
+
+.shop-info-box dt {
+  font-weight: bold;
+  color: #6a4329;
+  margin-top: 18px;
+}
+
+.shop-info-box dd {
+  margin: 6px 0 0 0;
+  color: #7a6757;
+  line-height: 1.7;
+}
+
+.shop-guide {
+  border-top: 1px solid #e2cdb8;
+  padding-top: 30px;
+}
+
+.shop-guide h2 {
+  text-align: center;
+  border: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.shop-guide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.shop-guide-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.shop-guide-grid h3 {
+  color: #5a3218;
+  margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+
+  .header {
+    height: auto;
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .main,
+  .menu-page,
+  .shop-page {
+    max-width: 100%;
+    padding: 28px 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .intro,
+  .menu-section,
+  .menu-hero,
+  .menu-row,
+  .shop-hero,
+  .shop-guide-grid {
+    display: block;
+  }
+
+  .photo,
+  .coffee-photo,
+  .menu-hero img,
+  .menu-row img,
+  .shop-hero img,
+  .shop-guide-grid img {
+    width: 100%;
+    height: auto;
+    margin: 18px 0;
+  }
+
+  .text h3 {
+    font-size: 22px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .recommend-list {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-row {
+    margin-top: 30px;
+  }
+
+  .price-list {
+    margin-top: 20px;
+  }
+
+  .footer {
+    padding: 24px 20px;
+    font-size: 13px;
+  }
+}
