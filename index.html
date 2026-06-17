@@ -2,21 +2,50 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUNA CAFE</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="header">
-    <a href="index.html" class="logo">
-  ☕ SUNA<br>CAFE
-</a>
-    <nav>
-      <a href="menu.html">メニュー</a>
-      <a href="shop.html">店舗情報</a>
-      <a href="#">Instagram</a>
-    </nav>
-  </header>
+<header class="header">
+
+  <a href="index.html" class="logo">
+    ☕ SUNA CAFE
+  </a>
+
+  <button class="menu-btn">☰</button>
+
+  <nav class="nav-menu">
+  <a href="menu.html">☕ メニュー</a>
+  <a href="shop.html">🏠 店舗情報</a>
+  <a href="#">📷 Instagram</a>
+</nav>
+
+</header>
+
+
+ <section class="slideshow">
+
+    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920"
+     class="slide active">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1920"
+     class="slide">
+
+<img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1920"
+     class="slide">
+
+
+    <div class="overlay">
+        <h1>SUNA CAFE</h1>
+        <p>創業30年の老舗喫茶店</p>
+    </div>
+
+</section>
+
+
 
   <main class="main">
     <h1>SUNA CAFE</h1>
@@ -72,6 +101,39 @@
     <p>電話番号　0000-000-000</p>
     <p>メールアドレス　aaaa.aaa@aa.co.jp</p>
   </footer>
+
+<script>
+const slides = document.querySelectorAll(".slide");
+let current = 0;
+
+setInterval(() => {
+
+    slides[current].classList.remove("active");
+
+    current++;
+
+    if(current >= slides.length){
+        current = 0;
+    }
+
+    slides[current].classList.add("active");
+
+}, 3000);
+const menuBtn = document.querySelector(".menu-btn");
+const navMenu = document.querySelector(".nav-menu");
+
+menuBtn.addEventListener("click", () => {
+
+  navMenu.classList.toggle("active");
+
+  if(navMenu.classList.contains("active")){
+      menuBtn.textContent = "✕";
+  }else{
+      menuBtn.textContent = "☰";
+  }
+
+});
+</script>
 
 </body>
 </html>
